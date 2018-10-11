@@ -10,5 +10,30 @@ package reservadevuelos;
  * @author Hèctor
  */
 class Aerolinea {
+    private Aerolinea aerolinea;
+    private  int aeronave;
+
+    public Aerolinea(Aerolinea aerolinea, int aeronave) {
+        this.aerolinea = aerolinea;
+        this.aeronave = aeronave;
+    }
+
+    public Aerolinea getAerolinea() {
+        return aerolinea;
+    }
+
+    public void setAerolinea(Aerolinea aerolinea) {
+        this.aerolinea = aerolinea;
+    }
+
+    public int getAeronave() {
+        return aeronave;
+    }
+
+    public void setAeronave(int aeronave) {
+        this.aeronave = aeronave;
+    }
+    
+    
     
 }
