@@ -3,48 +3,51 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package reservadevuelos;
+package reservadevuelos1;
 
 /**
  *
- * @author Hèctor
+ * @author Héctor
  */
 public class Ciudad {
-    
-    private String nombre;
-    private String pais;
-    private int idCiudad;
+    private int id_ciudad = -1;
+    private String nombreCiudad;
+    private String nombrePais;
 
-    public Ciudad(String nombre, String pais, int idCiudad) {
-        this.nombre = nombre;
-        this.pais = pais;
-        this.idCiudad = idCiudad;
+    public Ciudad(String nombreCiudad, String nombrePais) {
+        this.nombreCiudad = nombreCiudad;
+        this.nombrePais = nombrePais;
     }
 
-    public String getNombre() {
-        return nombre;
+    Ciudad() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public int getId_ciudad() {
+        return id_ciudad;
     }
 
-    public String getPais() {
-        return pais;
+    public void setId_ciudad(int id_ciudad) {
+        this.id_ciudad = id_ciudad;
     }
 
-    public void setPais(String pais) {
-        this.pais = pais;
+    public String getNombreCiudad() {
+        return nombreCiudad;
     }
 
-    public int getIdCiudad() {
-        return idCiudad;
+    public void setNombreCiudad(String nombreCiudad) {
+        this.nombreCiudad = nombreCiudad;
     }
 
-    public void setIdCiudad(int idCiudad) {
-        this.idCiudad = idCiudad;
+    public String getNombrePais() {
+        return nombrePais;
     }
-    
+
+    public void setNombrePais(String nombrePais) {
+        this.nombrePais = nombrePais;
+    }
     
     
 }
+
+    

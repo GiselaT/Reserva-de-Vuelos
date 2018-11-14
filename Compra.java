@@ -3,57 +3,82 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package reservadevuelos;
+package reservadevuelos1;
+
+import java.time.LocalDate;
 
 /**
  *
- * @author Hèctor
+ * @author Héctor
  */
 public class Compra {
+    private int id_compra = -1;
+    private int id_asiento;
+    private int id_cliente;
+    private LocalDate fechaRealizada;
+    private double monto;
+    private Compra compra;  
     
-    private int idCompra;
-    private int idAsiento;
-    private int idCliente;
-    private double precio;
-
-    public Compra(int idCompra, int idAsiento, int idCliente, double precio) {
-        this.idCompra = idCompra;
-        this.idAsiento = idAsiento;
-        this.idCliente = idCliente;
-        this.precio = precio;
+    public Compra() {
     }
 
-    public int getIdCompra() {
-        return idCompra;
-    }
-
-    public void setIdCompra(int idCompra) {
-        this.idCompra = idCompra;
-    }
-
-    public int getIdAsiento() {
-        return idAsiento;
-    }
-
-    public void setIdAsiento(int idAsiento) {
-        this.idAsiento = idAsiento;
-    }
-
-    public int getIdCliente() {
-        return idCliente;
-    }
-
-    public void setIdCliente(int idCliente) {
-        this.idCliente = idCliente;
-    }
-
-    public double getPrecio() {
-        return precio;
-    }
-
-    public void setPrecio(double precio) {
-        this.precio = precio;
-    }
     
+    
+    public Compra(int id_asiento, int id_cliente, LocalDate fechaRealizada, double monto, Compra compra) {
+        this.id_asiento = id_asiento;
+        this.id_cliente = id_cliente;
+        this.fechaRealizada = fechaRealizada;
+        this.monto = monto;
+        this.compra = compra;
+    }
+
+    public int getId_compra() {
+        return id_compra;
+    }
+
+    public void setId_compra(int id_compra) {
+        this.id_compra = id_compra;
+    }
+
+    public int getId_asiento() {
+        return id_asiento;
+    }
+
+    public void setId_asiento(int id_asiento) {
+        this.id_asiento = id_asiento;
+    }
+
+    public int getId_cliente() {
+        return id_cliente;
+    }
+
+    public void setId_cliente(int id_cliente) {
+        this.id_cliente = id_cliente;
+    }
+
+    public LocalDate getFechaRealizada() {
+        return fechaRealizada;
+    }
+
+    public void setFechaRealizada(LocalDate fechaRealizada) {
+        this.fechaRealizada = fechaRealizada;
+    }
+
+    public double getMonto() {
+        return monto;
+    }
+
+    public void setMonto(double monto) {
+        this.monto = monto;
+    }
+
+    public Compra getCompra() {
+        return compra;
+    }
+
+    public void setCompra(Compra compra) {
+        this.compra = compra;
+    }
     
 }
+
