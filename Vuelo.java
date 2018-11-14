@@ -3,48 +3,53 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package reservadevuelos;
+package reservadevuelos1;
 
 import java.time.LocalDate;
 
 /**
  *
- * @author Hèctor
+ * @author Héctor
  */
 public class Vuelo {
-    
-    private int idVuelo;
-    private Aerolinea aerolinea;
+     private int id_vuelo;
     private String ciudadOrigen;
     private String ciudadDestino;
+    private LocalDate fechaSalida;
     private LocalDate fechaLlegada;
-    private LocalDate fechaPartida;
-    public  int idAsiento;
+    private String aerolinea;
+    private String aeronave;
 
-    public Vuelo(int id, Aerolinea aerolinea, String ciudadOrigen, String ciudadDestino, LocalDate fechaLlegada, LocalDate fechaPartida, int idAsiento) {
-        this.idVuelo = idVuelo;
-        this.aerolinea = aerolinea;
+    public Vuelo(int id_vuelo, String ciudadOrigen, String ciudadDestino, LocalDate FechaSalida, LocalDate fechaLlegada, String aerolinea, String aeronave) {
+        this.id_vuelo = id_vuelo;
         this.ciudadOrigen = ciudadOrigen;
         this.ciudadDestino = ciudadDestino;
+        this.fechaSalida = fechaSalida;
         this.fechaLlegada = fechaLlegada;
-        this.fechaPartida = fechaPartida;
-        this.idAsiento = idAsiento;
-    }
-
-    public int getId() {
-        return idVuelo;
-    }
-
-    public void setId(int idVuelo) {
-        this.idVuelo = idVuelo;
-    }
-
-    public Aerolinea getAerolinea() {
-        return aerolinea;
-    }
-
-    public void setAerolinea(Aerolinea aerolinea) {
         this.aerolinea = aerolinea;
+        this.aeronave = aeronave;
+    }
+
+    public Vuelo(String ciudadOrigen, String ciudadDestino, LocalDate fechaSalida, LocalDate fechaLlegada, String aerolinea, String aeronave) {
+        id_vuelo=-1;
+        this.ciudadOrigen = ciudadOrigen;
+        this.ciudadDestino = ciudadDestino;
+        this.fechaSalida = fechaSalida;
+        this.fechaLlegada = fechaLlegada;
+        this.aerolinea = aerolinea;
+        this.aeronave = aeronave;
+    }
+
+    Vuelo() {
+        id_vuelo=-1;
+    }
+
+    public int getId_vuelo() {
+        return id_vuelo;
+    }
+
+    public void setId_vuelo(int id_vuelo) {
+        this.id_vuelo = id_vuelo;
     }
 
     public String getCiudadOrigen() {
@@ -63,6 +68,14 @@ public class Vuelo {
         this.ciudadDestino = ciudadDestino;
     }
 
+    public LocalDate getfechaSalida() {
+        return fechaSalida;
+    }
+
+    public void setFechaSalida(LocalDate fechaSalida) {
+        this.fechaSalida = fechaSalida;
+    }
+
     public LocalDate getFechaLlegada() {
         return fechaLlegada;
     }
@@ -71,22 +84,45 @@ public class Vuelo {
         this.fechaLlegada = fechaLlegada;
     }
 
-    public LocalDate getFechaPartida() {
-        return fechaPartida;
+    public String getAerolinea() {
+        return aerolinea;
     }
 
-    public void setFechaPartida(LocalDate fechaPartida) {
-        this.fechaPartida = fechaPartida;
+    public void setAerolinea(String aerolinea) {
+        this.aerolinea = aerolinea;
     }
 
-    public int getAsiento() {
-        return idAsiento;
+    public String getAeronave() {
+        return aeronave;
     }
 
-    public void setAsiento(int idAsiento) {
-        this.idAsiento = idAsiento;
+    public void setAeronave(String aeronave) {
+        this.aeronave = aeronave;
     }
-    
-    
+
+    String getFechaSalida() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void setId_ciudadDestino(int aInt) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void setId_ciudadOrigen(int aInt) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void setId_vueloNro(int aInt) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    int getId_ciudadOrigen() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    int getId_ciudadDestino() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     
 }
